@@ -1,0 +1,17 @@
+/* 超出一定字数后，文字自动显示 ... */
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// 有底层 docker-part 区域，上层元素的通用 wrapper
+@mixin wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0.5rem;
+  right: 0;
+  padding: 0 0.18rem 0.2rem 0.18rem;
+  overflow-y: auto;
+}
